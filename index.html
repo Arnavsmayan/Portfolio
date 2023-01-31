@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+#about img {
+  transition: all 0.5s;
+}
+
+#about img:hover {
+  transform: rotate(360deg);
+}
+.project {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  transition: all 0.5s;
+  background-color: #ffc107;
+  color: #333;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #8bc34a;
+  color: white;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  background-color: #00bcd4;
+  margin-right: 20px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #666;
+}
+
+}
+</style>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+  <h2>About Me</h2>
+  <p>Hi!<br>My name is Arnav and I'm a first year at Thapar University.</p>
+</section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+  <li class="project">
+    <div class="project-image"></div>
+    <div class="project-info">
+      <h3 class="project-name">Project 1</h3>
+      <p class="project-description">
+        Details of Project 1
+      </p>
+    </div>
+  </li>
+  <li class="project">
+    <div class="project-image"></div>
+    <div class="project-info">
+      <h3 class="project-name">Project 2</h3>
+      <p class="project-description">
+        Details of Project 2
+      </p>
+    </div>
+  </li>
+</ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can contact me at:</p>
+      <ul>
+        <li>Email: arnav@gmail.com</li>
+        <li>Phone: +91-1234567890</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
